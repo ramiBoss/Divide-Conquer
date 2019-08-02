@@ -35,11 +35,11 @@ def main():
     array = []
     print 'Enter the array elements, type -1 end the array'
     while True:
-        n = raw_input()
-        if(int(n) == -1):
+        item = raw_input()
+        if(int(item) == -1):
             break
         else:
-            array.append(int(n))
+            array.append(int(item))
     Max, Min = maxMin(0, len(array)-1, 0, 0)
     print 'Max : ', Max, 'Min : ', Min
     return
